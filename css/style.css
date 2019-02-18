@@ -59,7 +59,7 @@ body {
 
 .fab,
 .fas {
-  color: #fff;
+  color: #4A4A4A;
   cursor: pointer;
   font-size: 2.8rem;
   margin: 0 1.5rem;
@@ -79,7 +79,7 @@ a:hover,
 a:active,
 .fab:hover,
 .fas:hover {
-  color: #CCCECE;
+  color: #81D2A8;
   text-decoration: none;
 }
 
