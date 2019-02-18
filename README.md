@@ -1,3 +1,3 @@
 # Portfolio
 
-I'm still in the process of designing my portfolio. For the meantime, my social accounts are listed, including my email where you can contact me for possible projects.
+Hi, I'm Bel. I specialize in Web Design and Front End Development. I'm still in the process of designing my portfolio. For the meantime, check out my social links. :wink:
