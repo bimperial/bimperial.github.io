@@ -3,17 +3,37 @@ body {
   color: #fff;
 }
 
-.row {
-  position: absolute;
-  display: block;
-  top: 32%;
-  right: 0;
-  left: 0;
-  width: 50%;
+main {
+  max-width: 700px;
+  margin: 50px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2.8rem;
+  border: 1px solid #333333;
+}
+
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #a9aacd;
+  position: absolute;
+  top: 24%;
+  right: 0;
+  left: 0;
+}
+
+.fab,
+.fas {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.8rem;
+  margin: 0 1.5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 a,
@@ -32,18 +52,18 @@ a:active,
   text-decoration: none;
 }
 
-.fab,
-.fas {
-  color: #fff;
-  font-size: 2.8rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-span {
-  font-family: "Ubuntu";
-  display: block;
-  padding: .8rem;
-  text-transform: uppercase;
+@media screen and (max-width: 580px) {
+  .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inner-social {
+    margin: 1.3rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

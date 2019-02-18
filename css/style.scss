@@ -6,15 +6,31 @@ body {
     color: $text;
 }
 
-.row {
+main {
+    max-width: 700px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 2.8rem;
+    border: 1px solid #333333;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    color: #a9aacd;
     position: absolute;
-    display: block;
-    top: 32%;
+    top: 24%;
     right: 0;
     left: 0;
-    width: 50%;
-    display: flex;
-    margin: 0 auto;
+}
+
+.fab,
+.fas {
+    color: $text;
+    cursor: pointer;
+    font-size: 2.8rem;
+    margin: 0 1.5rem;
+    transition: all 0.5s ease;
 }
 
 a,
@@ -32,16 +48,13 @@ a:active,
     text-decoration: none;
 }
 
-.fab,
-.fas {
-    color: $text;
-    font-size: 2.8rem;
-    transition: all 0.5s ease;
-}
+@media screen and (max-width: 580px) {
+    .social {
+        flex-direction: column;
+        align-items: center;
+    }
 
-span {
-    font-family: "Ubuntu";
-    display: block;
-    padding: .8rem;
-    text-transform: uppercase;
+    .inner-social {
+        margin: 1.3rem 0;
+    }
 }
