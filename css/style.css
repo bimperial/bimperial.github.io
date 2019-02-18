@@ -1,15 +1,51 @@
 body {
   background-color: #202021;
   color: #fff;
+  font-family: 'Ubuntu';
 }
 
-main {
-  max-width: 700px;
-  margin: 50px auto;
+.container {
+  max-width: 1200px;
+  margin: .8em auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2.8rem;
-  border: 1px solid #333333;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 24%;
+  right: 0;
+  left: 0;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro blockquote {
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+.intro blockquote p {
+  line-height: 3rem;
+  margin: .5rem;
+}
+
+.intro blockquote span {
+  color: #81D2A8;
+  font-size: 2rem;
 }
 
 .social {
@@ -19,11 +55,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #a9aacd;
-  position: absolute;
-  top: 24%;
-  right: 0;
-  left: 0;
 }
 
 .fab,
@@ -50,6 +81,13 @@ a:active,
 .fas:hover {
   color: #CCCECE;
   text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    top: 0;
+    padding: .5rem;
+  }
 }
 
 @media screen and (max-width: 580px) {

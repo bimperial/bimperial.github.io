@@ -4,24 +4,46 @@ $text-hover: #CCCECE;
 body {
     background-color: #202021;
     color: $text;
+    font-family: 'Ubuntu';
 }
 
-main {
-    max-width: 700px;
-    margin: 50px auto;
+.container {
+    max-width: 1200px;
+    margin: .8em auto;
     box-sizing: border-box;
     padding: 2.8rem;
-    border: 1px solid #333333;
+    justify-content: center;
+    position: absolute;
+    top: 24%;
+    right: 0;
+    left: 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    blockquote {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+
+        p {
+            line-height: 3rem;
+            margin: .5rem;
+        }
+
+        span {
+            color: #81D2A8;
+            font-size: 2rem;
+        }
+    }
 }
 
 .social {
     display: flex;
     justify-content: center;
-    color: #a9aacd;
-    position: absolute;
-    top: 24%;
-    right: 0;
-    left: 0;
 }
 
 .fab,
@@ -46,6 +68,13 @@ a:active,
 .fas:hover {
     color: $text-hover;
     text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+    .container {
+        top: 0;
+        padding: .5rem;
+    }
 }
 
 @media screen and (max-width: 580px) {
